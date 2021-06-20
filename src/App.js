@@ -10,7 +10,12 @@ function App() {
       <main>
         <Dictionary/>
         </main>
-      <footer className ="text-centre">Coded by Alham C.</footer>
+      <footer className ="text-centre">
+        <a href= "https://github.com/ac29/dictionary-project" rel = "noreferrer" target="_blank">
+          Open-source code {" "}
+        </a>
+        by Alham C.
+      </footer>
       </div>  
     </div>
   );
