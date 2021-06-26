@@ -41,15 +41,21 @@ if (loaded){
 return (
         <div className = "Dictionary">
             <section>
-            <form onSubmit={handleSubmit}>
-                <input type = "search" onChange = {handleKeywordChange}/>
+            <form onSubmit={handleSubmit} className="Form">
+                <input 
+                type = "search" 
+                onChange = {handleKeywordChange} 
+                defaultValue ={props.defaultKeyword}/>
             </form>
             <div className=
             "hint">
                suggested words: sunset, wine, yoga...
             </div>
             </section>
-            <Results results = {results}/>
+            <section>
+                <Results results = {results}/>
+            </section>
+            
         </div>
         );
 } else {

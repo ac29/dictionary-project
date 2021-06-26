@@ -1,6 +1,7 @@
 import React from "react";
 import Meaning from "./Meaning";
 import Phonetic from "./Phonetic";
+import "./Results.css";
 
 export default function Results (props){
 if (props.results) {
@@ -20,7 +21,7 @@ if (props.results) {
             </section>
             {props.results.meanings.map(function (meaning,index) {
                 return (
-                    <div key={index}>
+                    <div key={index} className="Meaning">
                         <Meaning meaning = {meaning}/>
                     </div>
                 );
