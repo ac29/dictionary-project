@@ -8,7 +8,7 @@ function App() {
       <div className = "container">
         <header>Dictionary</header>
       <main>
-        <Dictionary/>
+        <Dictionary defaultKeyword="sunset"/>
         </main>
       <footer className ="text-centre">
         <a href= "https://github.com/ac29/dictionary-project" rel = "noreferrer" target="_blank">
